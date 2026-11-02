@@ -6,7 +6,7 @@ description: Start here. What this documentation site covers and how it is built
 tags: [overview]
 ---
 
-# Welcome to Acme Docs
+# Welcome to Rakuten Documentation Site
 
 This site is built with **docs as code**: every page is a Markdown file in a Git repository,
 reviewed through pull requests, checked by automation, and published on every merge to `main`.
