@@ -19,8 +19,8 @@ const baseUrl = process.env.DOCS_BASE_URL || `/${REPO}/`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Acme Docs',
-  tagline: 'Docs as code for everyone',
+  title: 'API Connect',
+  tagline: 'Build. Secure. Manage APIs',
   favicon: 'img/favicon.svg',
 
   url,
@@ -87,7 +87,7 @@ const config = {
           items: [{label: 'GitHub', href: `https://github.com/${ORG}/${REPO}`}],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Acme Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} API Connect. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
