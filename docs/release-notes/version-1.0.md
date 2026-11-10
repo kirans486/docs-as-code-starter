@@ -1,5 +1,5 @@
 ---
-id: version-1-0
+id: version-1.0
 title: APIConnect 1.0
 sidebar_label: Version 1.0
 sidebar_position: 1
