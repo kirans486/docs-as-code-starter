@@ -40,7 +40,7 @@ export default function Home() {
             <span className={styles.eyebrow}>API MANAGEMENT PLATFORM</span>
             <h1>Build. Secure. Manage APIs.</h1>
             <p>
-              Everything you need to register, protect and consume APIs
+              Register, protect and consume APIs
               through one centralized platform.
             </p>
             <div className={styles.heroActions}>
