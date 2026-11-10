@@ -52,10 +52,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // "Edit this page" links straight into GitHub.
-          editUrl: `https://github.com/kirans486/docs-as-code-starter/`,
-          showLastUpdateTime: false, // needs full git history in CI (fetch-depth: 0)
-        },
+          showLastUpdateTime: false,
+      },
         blog: false, // switch on if you need release notes or a blog
         theme: {customCss: './src/css/custom.css'},
       }),
