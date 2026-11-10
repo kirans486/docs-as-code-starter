@@ -44,7 +44,7 @@ Follow step-by-step instructions to perform common API management tasks.
 
 Review product updates, enhancements and known limitations.
 
-- [APIConnect 1.0](./release-notes/version-1.0.md) – Explore the initial product release.
+- [APIConnect 1.0](./release-notes/version-1.0.md) – Review the initial release notes for APIConnect.
 
 ## Who should use this documentation?
 
