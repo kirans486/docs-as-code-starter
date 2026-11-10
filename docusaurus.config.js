@@ -65,7 +65,8 @@ const config = {
   themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
-      title: 'Acme Docs',
+      title: 'APIConnect',
+      tagline: 'Build. Secure. Manage APIs.',
       logo: {alt: 'Acme logo', src: 'img/logo.svg'},
       items: [
         {type: 'docSidebar', sidebarId: 'mainSidebar', position: 'left', label: 'Docs'},
