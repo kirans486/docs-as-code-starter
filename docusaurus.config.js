@@ -19,7 +19,7 @@ const baseUrl = process.env.DOCS_BASE_URL || `/${REPO}/`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'API Connect',
+  title: 'APIConnect',
   tagline: 'Build. Secure. Manage APIs',
   favicon: 'img/favicon.svg',
 
@@ -33,12 +33,17 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'warn',
   markdown: {
+    mermaid: true,
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
+    onBrokenMarkdownLinks: 'warn',
   },
+},
 
   i18n: {defaultLocale: 'en', locales: ['en']},
+
+  clientModules: ['./src/clientModules/d3-transition.js'],
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -48,7 +53,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           // "Edit this page" links straight into GitHub.
-          editUrl: `https://github.com/${ORG}/${REPO}/edit/main/`,
+          editUrl: `https://github.com/kirans486/docs-as-code-starter/`,
           showLastUpdateTime: false, // needs full git history in CI (fetch-depth: 0)
         },
         blog: false, // switch on if you need release notes or a blog
@@ -66,30 +71,66 @@ const config = {
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
       title: 'APIConnect',
-      tagline: 'Build. Secure. Manage APIs.',
-      logo: {alt: 'Acme logo', src: 'img/logo.svg'},
+      logo: {alt: 'APIConnect Logo', src: 'img/apiconnect-logo.svg'},
       items: [
         {type: 'docSidebar', sidebarId: 'mainSidebar', position: 'left', label: 'Docs'},
-        {href: `https://github.com/${ORG}/${REPO}`, label: 'GitHub', position: 'right'},
+        {href: `https://github.com/kirans486/docs-as-code-starter/`, label: 'GitHub', position: 'right'},
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
+
+footer: {
+  style: 'dark',
+  links: [
+    {
+      title: 'Getting started',
+      items: [
         {
-          title: 'Docs',
-          items: [
-            {label: 'Getting started', to: '/docs/getting-started/installation'},
-            {label: 'Contribute', to: '/docs/contributing/workflow'},
-          ],
+          label: 'Introduction',
+          to: '/docs/getting-started/intro',
         },
         {
-          title: 'Project',
-          items: [{label: 'GitHub', href: `https://github.com/${ORG}/${REPO}`}],
+          label: 'Architecture',
+          to: '/docs/getting-started/architecture',
+        },
+        {
+          label: 'Quick Start',
+          to: '/docs/getting-started/quick-start',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} API Connect. Built with Docusaurus.`,
     },
+    {
+      title: 'User Guides',
+      items: [
+        {
+          label: 'Register an API',
+          to: '/docs/user-guides/register-api',
+        },
+        {
+          label: 'Create an API Token',
+          to: '/docs/user-guides/create-api-token',
+        },
+        {
+          label: 'Make an API Request',
+          to: '/docs/user-guides/make-api-request',
+        },
+      ],
+    },
+    {
+      title: 'Resources',
+      items: [
+        {
+          label: 'Release Notes',
+          to: '/docs/release-notes/version-1.0',
+        },
+        {
+          label: 'GitHub Repository',
+          href: `https://github.com/kirans486/docs-as-code-starter/`,
+        },
+      ],
+    },
+  ],
+  copyright: `Copyright © ${new Date().getFullYear()} APIConnect. Built with Docusaurus.`,
+},
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

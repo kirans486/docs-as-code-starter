@@ -1,22 +1,61 @@
 ---
 id: intro
-title: Welcome
+title: Welcome to APIConnect
+sidebar_label: Welcome
 sidebar_position: 1
-description: Start here. What this documentation site covers and how it is built.
-tags: [overview]
+description: Explore APIConnect documentation for API management, security and integration.
+slug: /
 ---
 
-# Welcome to Rakuten Documentation Site
+# Welcome to APIConnect
 
-This site is built with **docs as code**: every page is a Markdown file in a Git repository,
-reviewed through pull requests, checked by automation, and published on every merge to `main`.
+Build. Secure. Manage APIs.
 
-:::tip What you can do here
-Read the guides, then open a pull request to fix or add a page. Every page has an **Edit this page** link.
+APIConnect is a centralized API management platform designed to help organizations register, secure, publish and monitor APIs.
+
+This documentation provides practical guidance for developers, API administrators and application teams working with the APIConnect platform.
+
+:::tip What you can do with APIConnect
+- Register and manage APIs through a centralized catalog.
+- Generate access tokens and manage API permissions.
+- Consume APIs using authenticated HTTP requests.
+- Monitor API activity and troubleshoot common errors.
 :::
 
-## Where to go next
+## Explore the documentation
 
-- [Install the tools](./getting-started/installation.md) and run the site locally.
-- [Write your first page](./getting-started/first-page.md).
-- [Learn the contribution workflow](./contributing/workflow.md).
+### Getting started
+
+Understand the APIConnect platform and learn how to get started.
+
+- [Introduction](./getting-started/intro.md) – Learn about APIConnect and its capabilities.
+- [Architecture](./getting-started/architecture.md) – Understand the platform components and request flow.
+- [Quick Start](./getting-started/quick-start.md) – Complete your first API integration.
+
+### User Guides
+
+Follow step-by-step instructions to perform common API management tasks.
+
+- [Register an API](./user-guides/register-api.md)
+- [Create an API Token](./user-guides/create-api-token.md)
+- [Make an API Request](./user-guides/make-api-request.md)
+
+### Release Notes
+
+Review product updates, enhancements and known limitations.
+
+- [APIConnect 1.0](./release-notes/version-1.0.md) – Explore the initial product release.
+
+## Who should use this documentation?
+
+| Audience | What you will learn |
+|---|---|
+| Developers | Consume APIs and integrate applications |
+| API Administrators | Register APIs and manage access |
+| Integration Teams | Configure API integrations and troubleshoot requests |
+| Platform Teams | Understand architecture and API management capabilities |
+
+## Need help?
+
+Start with the [Quick Start guide](./getting-started/quick-start.md) or explore the relevant User Guide.
+
